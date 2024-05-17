@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Site</title>
+  <link href="styles.css" rel="stylesheet" />
+  <script src="script.js"></script>
+</head>
+<body>
+    <div class="blurry-background"></div>
+    <header>
+        <h1>Personal Site</h1>
+        <nav>
+        <ul>
+            <li><a href="#about-me">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- ABOUT SECTION -->
+        <section id="aboutMe">
+            <div class="aboutMeDetails">
+                <h2>Alexander Uriel A. Navarra</h2>
+                <p>A highly enthusiastic and positive individual with extensive experience as a food crew member, now proudly holds a Bachelor of Science in Computer Science. With years of accumulated experience, demonstrates excellence in providing exceptional customer service, adept at upselling, and proficient in building strong rapport. <br><br>Currently seeking a career transition to pursue my aspirations in IT and use the knowledge gained during university studies. Available for an immediate start.</p>
+            </div>
+            <div class="myProfile">
+                <img src="images/profile.jpg">
+            </div>
+        </section>
+        <!-- SOCIALS SECTION -->
+        <section id="socials">
+            <h2>Socials</h2>
+            <a href="https://yourlink.com">
+                <img src="images/discord.png" alt="Profile Picture">
+            </a>
+            <a href="https://github.com/Nightghast">
+                <img src="images/github.png" alt="Profile Picture">
+            </a>
+            <a href="https://www.linkedin.com/in/alexanderurielnavarra/">
+                <img src="images/linkedin.png" alt="Profile Picture">
+            </a>
+            <a href="mailto:alexanderurielnavarra@yahoo.com">
+                <img src="images/yahoo.png" alt="Profile Picture">
+            </a>
+        </section>
+        <!-- PROJECTS SECTION -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="container">
+                <div class="itemButton">
+                    <div id="item1" class="item">
+                        <h3>Pokemon Battle</h3>
+                        <img src="/images/poke battle.png" alt="Pokemon-Battle">
+                        <div class="projDetails projDetails1">
+                            <p>A project of mine made from Python where you can choose your own Pokemon to battle Mewtwo. Make a wise decision by using the strongest attack, your destiny is in your hands. Decide if you want to be a loser or forever be the champion.</p>
+                        </div>
+                    </div>
+                    <div class="buttonContainer">
+                        <a class="myButton" href="https://www.codedex.io/@Nightghast/pokemon-battle">Play</a>
+                        <a class="myButton" href="https://github.com/Nightghast/codedex/tree/main/Python/Poke%20Battle">Github</a>
+                    </div>
+                </div>
+                <div class="itemButton">
+                    <div id="item2" class="item">
+                        <h3>Hangman</h3>
+                        <img src="/images/hangman.png" alt="Hangman">                   
+                        <div class="projDetails projDetails2">
+                            <p>A project of mine made from Python where you can choose your own Pokemon to battle Mewtwo. Make a wise decision by using the strongest attack, your destiny is in your hands. Decide if you want to be a loser or forever be the champion.</p>
+                        </div>
+                    </div>
+                    <div class="buttonContainer">
+                        <a class="myButton" href="https://www.codedex.io/@Nightghast/hangman">Play</a>
+                        <a class="myButton" href="">Github</a>
+                    </div>
+                </div>
+                <div class="itemButton">
+                    <div id="item3" class="item">
+                        <h3>Personal Site</h3>
+                        <img src="/images/portfolio.png" alt="Portfolio-Website">
+                        <div class="projDetails projDetails3">
+                            <p>A project of mine made from Python where you can choose your own Pokemon to battle Mewtwo. Make a wise decision by using the strongest attack, your destiny is in your hands. Decide if you want to be a loser or forever be the champion.</p>
+                        </div>
+                    </div>
+                    <div class="buttonContainer">
+                        <a class="myButton" href="">Play</a>
+                        <a class="myButton" href="">Github</a>
+                    </div>
+                </div>
+                <div class="itemButton">
+                    <div id="item4" class="item">
+                        <h3>Interactive Phone</h3>
+                        <img src="/images/phone.png" alt="Interactive-Phone">
+                        <div class="projDetails projDetails4">
+                            <p>A project of mine made from Python where you can choose your own Pokemon to battle Mewtwo. Make a wise decision by using the strongest attack, your destiny is in your hands. Decide if you want to be a loser or forever be the champion.</p>
+                        </div>
+                    </div>
+                    <div class="buttonContainer">
+                        <a class="myButton" href="https://www.codedex.io/@Nightghast/virtual-fone">Play</a>
+                        <a class="myButton" href="https://github.com/Nightghast/phone">Github</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contacts">
+            <form class="contacts">
+                <h2>Contact Form</h2>
+                <label for="fname">First Name</label>
+                <br><br>
+                <input type="text" id="fname" name="firstname" placeholder="Enter first name.." required>
+                <br>
+                <label for="lname">Last Name</label>
+                <br><br>
+                <input type="text" id="lname" name="lastname" placeholder="Enter last name.." required>
+                <br>
+                <label for="email">Email</label>
+                <br><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <br><br>
+                <label for="subject">Subject</label>
+                <br><br>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px"></textarea>
+                <br><br>
+                <input type="submit" value="Submit"></label>
+            </form>
+        </section>
+        <!-- <section id="splineSection" class="inline-container">
+            <div id="splineText">
+                <h2>Spline Viewer</h2>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+            </div>
+            <div id="splineViewer">
+                <script type="module" src="https://unpkg.com/@splinetool/viewer@1.3.7/build/spline-viewer.js"></script>
+                <spline-viewer url="https://prod.spline.design/dwQ-TCzGf8otM6Dd/scene.splinecode"></spline-viewer>
+            </div> -->
+        </section>
+    </main>
+  <footer>
+    <p>Copyright © 2024 A. Navarra</p>
+  </footer>
+</body>
+</html>
