@@ -1,0 +1,2 @@
+Lang icons - https://icons8.com/icons/set/aos--white
+Transition AOS - https://michalsnik.github.io/aos/

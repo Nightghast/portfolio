@@ -13,49 +13,50 @@
         <h1>Personal Site</h1>
         <nav>
         <ul>
-            <li><a href="#aboutMe">About</a></li>
-            <li><a href="#projects">Projects</a></li>
             <li><a href="#contacts">Contacts</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#aboutMe">About</a></li>
+            
         </ul>
         </nav>
     </header>
     <main>
         <!-- ABOUT SECTION -->
-        <section id="aboutMe">
-            <div class="aboutMeDetails">
+        <section id="aboutMeSection">
+            <div id="aboutMe">
                 <h2 data-aos="fade-right"  data-aos-duration="1000">Alexander Uriel A. Navarra</h2>
-                <p data-aos="fade-up" data-aos-delay="1000">A highly enthusiastic and positive individual with extensive experience as a food crew member, now proudly holds a Bachelor of Science in Computer Science. With years of accumulated experience, demonstrates excellence in providing exceptional customer service, adept at upselling, and proficient in building strong rapport. <br><br>Currently seeking a career transition to pursue my aspirations in IT and use the knowledge gained during university studies. Available for an immediate start.</p>
+                <p data-aos="fade-up" data-aos-delay="700">A highly enthusiastic and positive individual with extensive experience as a food crew member, now proudly holds a Bachelor of Science in Computer Science. With years of accumulated experience, demonstrates excellence in providing exceptional customer service, adept at upselling, and proficient in building strong rapport. <br><br>Currently seeking a career transition to pursue my aspirations in IT and use the knowledge gained during university studies. Available for an immediate start.</p>
             </div>
-            <div class="myProfile">
+            <div id="myProfile">
                 <img src="images/profile.jpg">
             </div>
         </section>
         <!-- SOCIALS SECTION -->
         <section id="socials">
             <h2>Socials</h2>
-            <a href="https://yourlink.com">
+            <a href="https://yourlink.com" data-aos="zoom-in">
                 <img src="images/discord.png" alt="Profile Picture">
             </a>
-            <a href="https://github.com/Nightghast">
+            <a href="https://github.com/Nightghast" data-aos="zoom-in">
                 <img src="images/github.png" alt="Profile Picture">
             </a>
-            <a href="https://www.linkedin.com/in/alexanderurielnavarra/">
+            <a href="https://www.linkedin.com/in/alexanderurielnavarra/" data-aos="zoom-in">
                 <img src="images/linkedin.png" alt="Profile Picture">
             </a>
-            <a href="mailto:alexanderurielnavarra@yahoo.com">
+            <a href="mailto:alexanderurielnavarra@yahoo.com" data-aos="zoom-in">
                 <img src="images/yahoo.png" alt="Profile Picture">
             </a>
         </section>
         <!-- PROJECTS SECTION -->
         <section id="projects">
             <h2>Projects</h2>
-            <div class="container">
+            <div id="container">
                 <div class="itemButton">
                     <div data-aos="fade-up"  data-aos-duration="1000" id="item1" class="item">
                         <h3>Pokemon Battle</h3>
                         <img src="/images/poke battle.png" alt="Pokemon-Battle">
                         <div class="iconLanguage">
-                            <p><img src="images/languages/icons8-python-50.png">Python</p>
+                            <p><img src="images/languages/icons8-python-50.png" class="icon">Python</p>
                         </div>
                         <div class="projDetails projDetails1">
                             <p>This Python project lets you choose your own Pokémon to battle against Mewtwo. Make strategic decisions using your strongest attacks—your destiny is in your hands. Will you emerge as a champion or accept defeat?</p>
@@ -71,7 +72,7 @@
                         <h3>Hangman</h3>
                         <img src="/images/hangman.png" alt="Hangman">  
                         <div class="iconLanguage">
-                            <p><img src="images/languages/icons8-python-50.png">Python</p>
+                            <p><img src="images/languages/icons8-python-50.png" class="icon">Python</p>
                         </div>                
                         <div class="projDetails projDetails2">
                             <p>A game featuring a list of 7 words for you to guess. Can you save the hangman?</p>
@@ -87,9 +88,9 @@
                         <h3>Personal Site</h3>
                         <img src="/images/portfolio.png" alt="Portfolio-Website">
                         <div class="iconLanguage">
-                            <p><img src="images/languages/icons8-html-50.png">HTML</p>
-                            <p><img src="images/languages/icons8-css-50.png">CSS</p>
-                            <p><img src="images/languages/icons8-javascript-50.png">Javascript</p>
+                            <p><img src="images/languages/icons8-html-50.png" class="icon">HTML</p>
+                            <p><img src="images/languages/icons8-css-50.png" class="icon">CSS</p>
+                            <p><img src="images/languages/icons8-javascript-50.png" class="icon">Javascript</p>
                         </div>
                         <div class="projDetails projDetails3">
                             <p>My personal site showcases my various projects and social media links. It’s a work in progress, and I’ll be adding more features in the future.</p>
@@ -105,9 +106,9 @@
                         <h3>Interactive Phone</h3>
                         <img src="/images/phone.png" alt="Interactive-Phone">
                         <div class="iconLanguage">
-                            <p><img src="images/languages/icons8-html-50.png">HTML</p>
-                            <p><img src="images/languages/icons8-css-50.png">CSS</p>
-                            <p><img src="images/languages/icons8-javascript-50.png">Javascript</p>
+                            <p><img src="images/languages/icons8-html-50.png" class="icon">HTML</p>
+                            <p><img src="images/languages/icons8-css-50.png" class="icon">CSS</p>
+                            <p><img src="images/languages/icons8-javascript-50.png" class="icon">Javascript</p>
                         </div>
                         <div class="projDetails projDetails4">
                             <p>A dynamic phone interface allows you to upload images, view them in a gallery, play sounds, and perform searches. This project is a work in progress, with additional features planned for the future.</p>
@@ -118,6 +119,22 @@
                         <a class="myButton" href="https://github.com/Nightghast/phone">Github</a>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section id="education">
+            <div id="schoolContainer" data-aos="zoom-in-right">
+                <div id="school">
+                    <h2>City of Westminster College</h2>
+                    <h3>Diploma of Higher Education: Information and Communications Technology, 2016 – 2018</h3>
+                    <p>Dictintion</p>
+                    <h2>Middlesex University</h2>
+                    <h3>Bachelor of Science: Computer Science, 2019 – 2023</h3>
+                    <p>Upper-Second</p>
+                </div>
+            </div>
+            <div id="splineViewer" data-aos="zoom-in-left">
+                <script type="module" src="https://unpkg.com/@splinetool/viewer@1.3.7/build/spline-viewer.js"></script>
+                <spline-viewer url="https://prod.spline.design/dwQ-TCzGf8otM6Dd/scene.splinecode"></spline-viewer>
             </div>
         </section>
         <section id="contacts">
@@ -142,25 +159,10 @@
                 <input type="submit" value="Submit"></label>
             </form>
         </section>
-        <!-- <section id="splineSection" class="inline-container">
-            <div id="splineText">
-                <h2>Spline Viewer</h2>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                </p>
-            </div>
-            <div id="splineViewer">
-                <script type="module" src="https://unpkg.com/@splinetool/viewer@1.3.7/build/spline-viewer.js"></script>
-                <spline-viewer url="https://prod.spline.design/dwQ-TCzGf8otM6Dd/scene.splinecode"></spline-viewer>
-            </div> -->
-        </section>
     </main>
   <footer>
-    <p>Copyright © 2024 A. Navarra</p>
+    <p>Copyright © 2024 AU. Navarra</p>
   </footer>
-
-
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
