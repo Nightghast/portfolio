@@ -89,7 +89,8 @@
                 <div class="itemButton">
                     <div data-aos="fade-up"  data-aos-delay="1000" id="item3" class="item">
                         <h3>Personal Site</h3>
-                        <img src="/images/portfolio.png" alt="Portfolio-Website">
+                        <!-- <img src="/images/portfolio.png" alt="Portfolio-Website"> -->
+                        <iframe src="https://giphy.com/embed/qntK1KZVwnyAZfLMxE" frameBorder="0"></iframe>
                         <div class="iconLanguage">
                             <p><img src="images/languages/icons8-html-50.png" class="icon">HTML</p>
                             <p><img src="images/languages/icons8-css-50.png" class="icon">CSS</p>
@@ -107,7 +108,8 @@
                 <div class="itemButton">
                     <div data-aos="fade-up"  data-aos-delay="1500" id="item4" class="item">
                         <h3>Interactive Phone</h3>
-                        <img src="/images/phone.png" alt="Interactive-Phone">
+                        <!-- <img src="/images/phone.png" alt="Interactive-Phone"> -->
+                        <iframe src="https://giphy.com/embed/jeSulSmXZSDRJlBY0I" frameBorder="0"></iframe>
                         <div class="iconLanguage">
                             <p><img src="images/languages/icons8-html-50.png" class="icon">HTML</p>
                             <p><img src="images/languages/icons8-css-50.png" class="icon">CSS</p>
@@ -118,7 +120,7 @@
                         </div>
                     </div>
                     <div class="buttonContainer">
-                        <a class="myButton" href="https://www.codedex.io/@Nightghast/virtual-fone">Play</a>
+                        <a class="myButton" href="https://aunavarra-phone.netlify.app/">Play</a>
                         <a class="myButton" href="https://github.com/Nightghast/phone">Github</a>
                     </div>
                 </div>
@@ -142,25 +144,22 @@
             
         </section>
         <section id="contacts">
-            <form class="contacts">
+            <form class="contacts" action="https://api.web3forms.com/submit" method="POST">
                 <h2>Contact Form</h2>
-                <label for="fname">First Name</label>
+                <input type="hidden" name="access_key" value="6931e1d0-5424-4d96-a854-1d335a436731">
+                <label for="name">Name</label>
                 <br><br>
-                <input type="text" id="fname" name="firstname" placeholder="Enter first name.." required>
-                <br>
-                <label for="lname">Last Name</label>
-                <br><br>
-                <input type="text" id="lname" name="lastname" placeholder="Enter last name.." required>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
                 <br>
                 <label for="email">Email</label>
                 <br><br>
                 <input type="email" id="email" name="email" placeholder="Enter your email" required>
                 <br><br>
-                <label for="subject">Subject</label>
+                <label for="message">Message</label>
                 <br><br>
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px"></textarea>
+                <textarea id="message" name="message" placeholder="Enter message.." style="height:150px"></textarea>
                 <br><br>
-                <input type="submit" value="Submit"></label>
+                <input type="submit" value="Send"></label>
             </form>
         </section>
     </main>
