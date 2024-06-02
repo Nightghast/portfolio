@@ -116,6 +116,23 @@ nav li a:hover {
     font-weight: 100;
     font-family: Courier New, monospace;
 }
+.downloadBtn {
+    background-color: rgba(0, 0, 0, 0.418); 
+    color: white; 
+    padding: 15px 50px; 
+    font-size: 20px;
+    transition-duration: 0.4s; 
+    cursor: pointer; 
+    border-radius: 35px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    width: 70px;
+    text-align: center;
+}
+.downloadBtn:hover {
+    font-size: 25px;
+}
 
 
 
@@ -127,6 +144,7 @@ nav li a:hover {
     text-decoration: none;
 }
 #socials img {
+    transition-duration: 0.4s; 
     width: 100px;
     padding: 0 50px;
 }
@@ -329,7 +347,7 @@ nav li a:hover {
     margin: 8px 0;
     color: #ffffff;
     font-size: 15px;
-    font-family: Courier, monospace;
+    font-family: Andale Mono, monospace;
     line-height: 1.6;
 }
 .timeline .date {
@@ -380,6 +398,7 @@ input[type=submit]:hover {
 .contacts input[type="email"]::placeholder,
 .contacts textarea::placeholder {
     color: white;
+    font-family: Courier, monospace;
 }
 footer {
     text-align: center
