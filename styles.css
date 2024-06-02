@@ -103,14 +103,14 @@ nav li a:hover {
 #myProfile img:hover {
     transform: scale(1.1); 
 }
-#aboutMe {
+#about {
     flex: 1;
 }
-#aboutMe h2 {
+#about h2 {
     font-size: 45px;
     font-family: Andale Mono, monospace;
 }
-#aboutMe p {
+#about p {
     margin-right: 10%;
     font-size: 25px;
     font-weight: 100;
