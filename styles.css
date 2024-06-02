@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 body { 
     color: white;
 }
@@ -42,19 +44,12 @@ body {
 /* HEADER SECTION */
 header {
     font-family: Courier, monospace;
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
-    /* padding: 5px 30px;  */
     background-color: rgba(136, 131, 131, 0.13);
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1;
 }
-/* header h1 {
-    font-size: 30px;
-} */
 nav ul {
     list-style-type: none;
     overflow: hidden;
@@ -131,10 +126,6 @@ nav li a:hover {
 #socials a {
     text-decoration: none;
 }
-#socials h2 {
-    font-size: 35px;
-    font-family: Andale Mono, monospace;
-}
 #socials img {
     width: 100px;
     padding: 0 50px;
@@ -159,10 +150,10 @@ nav li a:hover {
 }
 #projects {
     padding: 50px 100px;
+    margin-top: 50px;
 }
-#projects h2 {
-    text-align: left;
-    font-size: 45px;
+#projects h3 {
+    font-family: Andale Mono, monospace;
 }
 .item {
     background-color: rgba(107, 106, 106, 0.582);
@@ -260,22 +251,94 @@ nav li a:hover {
 
 
 /* EDUCATION SECTION */
-#education {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+#timelineContainer {
+    max-width: 800px;
+    margin: 0 auto;
 }
-#schoolContainer {
-    text-align: center;
-    padding-left: 100px;
+.timeline {
+    position: relative;
+    padding: 20px 0;
 }
-#splineViewer {
-    flex: 1;
+
+.timeline ul {
+    padding: 0;
+    list-style-type: none;
+    position: relative;
 }
-spline-viewer {
-    width: 100%; 
+
+.timeline ul::before {
+    content: '';
+    background: #ffffff;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    width: 4px;
     height: 100%;
+    transform: translateX(-50%);
 }
+.timeline ul li {
+    position: relative;
+    width: 80%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.timeline ul li::after {
+    content: '';
+    background: rgb(107, 106, 106);
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 0;
+}
+.timeline ul li:hover::after {
+    background-color: #ffffff;
+}
+.timeline ul li:nth-child(odd)::after {
+    transform: translate(50%, -50%);
+    right: 0;
+}
+.timeline ul li:nth-child(even)::after {
+    transform: translate(-50%, -50%);
+    left: 0;
+}
+.timeline ul li:nth-child(odd) {
+    left: -30%;
+}
+
+.timeline ul li:nth-child(even) {
+    left: 50%;
+}
+
+.timeline-content {
+    background: rgba(107, 106, 106, 0.582);
+    padding: 20px;
+    border-radius: 6px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline h1 {
+    font-size: 1.5em; 
+    margin: 0 0 10px 0; 
+    color: #ffffff;
+    font-weight: 700; 
+    font-family: Andale Mono, monospace;
+}
+.timeline p {
+    margin: 8px 0;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: Courier, monospace;
+    line-height: 1.6;
+}
+.timeline .date {
+    font-size: 15px;
+    letter-spacing: 2px;
+    position: absolute;
+    top: -30px;
+}
+
 
 
 /* CONTACT SECTION */
@@ -283,26 +346,40 @@ spline-viewer {
     text-align: center;
     margin-top: 45px;
     padding: 15px;
-    background-color: rgb(255, 255, 255, 0.2);
-    color:black;
+    color:rgb(255, 255, 255);
+    font-family: Courier, monospace;
 }
-    input[type=text], input[type=email], textarea {
+input[type=text], input[type=email], textarea {
     width: 50%;
     padding: 12px;
-    border: 1px solid #ccc;
+    border: 1px solid #ffffff;
     border-radius: 4px;
     box-sizing: border-box; 
     margin-top: 6px;
     margin-bottom: 16px;
+    background-color: #ffffff00;
 }
 input[type=submit] {
-    background-color: red;
+    background-color: rgba(255, 255, 255, 0);
     color: white;
     padding: 12px 20px;
-    border: none;
+    border: 1px solid #ffffff;
     border-radius: 4px;
     cursor: pointer;
     width: 250px;
+}
+input[type=submit]:hover {
+    background-color: rgba(107, 106, 106, 0.582);
+}
+.contacts input[type="text"],
+.contacts input[type="email"],
+.contacts textarea {
+    color: white;
+}
+.contacts input[type="text"]::placeholder,
+.contacts input[type="email"]::placeholder,
+.contacts textarea::placeholder {
+    color: white;
 }
 footer {
     text-align: center
