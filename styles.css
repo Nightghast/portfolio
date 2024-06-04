@@ -203,7 +203,8 @@ nav li a:hover {
     display: block;
 }
 
-#item1:hover > img,
+/* #item1:hover > img, */
+#item1:hover > iframe,
 #item1:hover > h3,
 #item1:hover > .iconLanguage,
 #item2:hover > img,
